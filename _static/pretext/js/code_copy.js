@@ -18,7 +18,6 @@ document.addEventListener("click", (ev) => {
 })
 
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("NOW!!!!")
   document.head.insertAdjacentHTML("beforeend", `<style type="text/css">
     .ptx-content .code-box {
       position: relative;

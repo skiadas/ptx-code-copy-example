@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Section Title",
-  "body": " Section Title  Text of section.  import httpx import pandas  "
+  "body": " Section Title  Text of section. def f(x): return x + x   import httpx import pandas  "
 },
 {
   "id": "backmatter-2",

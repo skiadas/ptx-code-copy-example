@@ -80,7 +80,7 @@ window.MathJax = {
 <meta property="og:type" content="book">
 <meta property="book:title" content="My Great Book">
 <meta property="book:author" content="You">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/code_copy.js"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -150,9 +150,15 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-section-name"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">Section Title</span>
 </h2>
-<div class="para" id="sec-section-name-2">Text of section.</div>
+<div class="para logical" id="sec-section-name-2">
+<div class="para">Text of section.</div>
+<pre class="code-display tex2jax_ignore">
+    def f(x):
+      return x + x
+  </pre>
+</div>
 <div class="code-box">
-<button class="code-copy"><span class="material-symbols-outlined">content_copy</span></button><pre class="program"><code class="language-py">import httpx
+<button class="code-copy" title="Copy code" role="button" aria-label="Copy code"><span class="copyicon material-symbols-outlined">content_copy</span><span class="checkmark material-symbols-outlined">check</span></button><pre class="program"><code class="language-py">import httpx
 import pandas
 </code></pre>
 </div></section></div>

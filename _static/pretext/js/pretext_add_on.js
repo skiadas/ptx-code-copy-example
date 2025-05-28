@@ -1087,3 +1087,16 @@ window.addEventListener("DOMContentLoaded", function(event) {
         }
     }
 });
+
+// START Support for code-copy button functionality
+document.addEventListener("click", (ev) => {
+    const button = ev.target.closest("button");
+    const codeBox = ev.target.closest(".code-box");
+    if (!navigator.clipboard || !codeBox) return;
+    preBox = codeBox.querySelector("pre");
+    navigator.clipboard.writeText(preBox.textContent);
+    button.classList.toggle("copied")
+    setTimeout(() => button.classList.toggle("copied"), 1000);
+});
+// END Support for code-copy button functionality
+
