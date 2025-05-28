@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Section Title",
-  "body": " Section Title  Text of section. def f(x): return x + x   import httpx import pandas  "
+  "body": " Section Title  Text of section. def f(x): return x + x   import httpx import pandas  import httpx import pandas  Line numbers makes the button visually disappear (but still interactable via keyboard)  import httpx import pandas print(\"with line numbers\")  import httpx import pandas  def f(): return \"this is activecode\"  Don't know how to generate proper codelens:  def f(): return \"this is codelens\"   Console input here  And console output here  More input  More output      def f(): return \"side-by-side\"   And also ...   def f(): return \"side-by-side\"     "
 },
 {
   "id": "backmatter-2",
