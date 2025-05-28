@@ -1091,12 +1091,26 @@ window.addEventListener("DOMContentLoaded", function(event) {
 // START Support for code-copy button functionality
 document.addEventListener("click", (ev) => {
     const button = ev.target.closest("button");
-    const codeBox = ev.target.closest(".code-box");
+    const codeBox = ev.target.closest(".clipboardable");
     if (!navigator.clipboard || !codeBox) return;
-    preBox = codeBox.querySelector("pre");
-    navigator.clipboard.writeText(preBox.textContent);
+    const buttonContent = button.textContent;
+    const preContent = codeBox.textContent;
+    const index = preContent.lastIndexOf(buttonContent);
+    navigator.clipboard.writeText(preContent.substring(0, index));
     button.classList.toggle("copied")
     setTimeout(() => button.classList.toggle("copied"), 1000);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".clipboardable");
+    for (el of elements) {
+        el.insertAdjacentHTML("beforeend", `
+    <button class="code-copy" title="Copy code" role="button" aria-label="Copy code" >
+        <span class="copyicon material-symbols-outlined">content_copy</span>
+        <span class="checkmark material-symbols-outlined">check</span>
+    </button>
+            `.trim());
+    }
 });
 // END Support for code-copy button functionality
 

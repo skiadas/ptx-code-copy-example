@@ -151,55 +151,86 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">Section Title</span>
 </h2>
 <div class="para logical" id="sec-section-name-2">
-<div class="para">Text of section.</div>
-<pre class="code-display tex2jax_ignore">
+<div class="para">Text of section. And a cd:</div>
+<pre class="code-display tex2jax_ignore clipboardable">
     def f(x):
       return x + x
   </pre>
+<div class="para">A cd with clines:</div>
+<pre class="code-display tex2jax_ignore clipboardable">a line here
+Another line
+</pre>
 </div>
-<div class="code-box">
-<button class="code-copy" title="Copy code" role="button" aria-label="Copy code"><span class="copyicon material-symbols-outlined">content_copy</span><span class="checkmark material-symbols-outlined">check</span></button><pre class="program"><code class="language-py">import httpx
+<div class="para" id="sec-section-name-3">A simple program element:</div>
+<div class="code-box"><pre class="program clipboardable"><code class="language-none">import httpx
 import pandas
-</code></pre>
-</div>
-<div class="code-box">
-<button class="code-copy" title="Copy code" role="button" aria-label="Copy code"><span class="copyicon material-symbols-outlined">content_copy</span><span class="checkmark material-symbols-outlined">check</span></button><pre class="program" data-line="2"><code class="language-py">import httpx
+</code></pre></div>
+<div class="code-box"><pre class="program clipboardable"><code class="language-py">import httpx
 import pandas
-</code></pre>
-</div>
-<div class="para" id="sec-section-name-5">Line numbers makes the button visually disappear (but still interactable via keyboard)</div>
-<div class="code-box">
-<button class="code-copy" title="Copy code" role="button" aria-label="Copy code"><span class="copyicon material-symbols-outlined">content_copy</span><span class="checkmark material-symbols-outlined">check</span></button><pre class="program line-numbers"><code class="language-py">import httpx
+</code></pre></div>
+<div class="code-box"><pre class="program clipboardable" data-line="2"><code class="language-py">import httpx
+import pandas
+</code></pre></div>
+<div class="para" id="sec-section-name-7">Line numbers makes the button visually disappear (but still interactable via keyboard)</div>
+<div class="code-box"><pre class="program line-numbers clipboardable"><code class="language-py">import httpx
 import pandas
 print("with line numbers")
-</code></pre>
-</div>
-<div class="code-box">
-<button class="code-copy" title="Copy code" role="button" aria-label="Copy code"><span class="copyicon material-symbols-outlined">content_copy</span><span class="checkmark material-symbols-outlined">check</span></button><pre class="program line-numbers" data-line="2"><code class="language-py">import httpx
+</code></pre></div>
+<div class="code-box"><pre class="program line-numbers clipboardable" data-line="2"><code class="language-py">import httpx
 import pandas
-</code></pre>
-</div>
+</code></pre></div>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id=""><textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="_editor" data-question_label="" data-codelens="true" data-timelimit="25000">def f():
   return "this is activecode"
 </textarea></div></div></div>
-<div class="para" id="sec-section-name-9">Don’t know how to generate proper codelens:</div>
+<div class="para" id="sec-section-name-11">Don’t know how to generate proper codelens:</div>
 <div class="ptx-runestone-container"><div class="runestone codelens">
 <div class="cd_section" data-component="codelens" data-question_label=""><div class="pytutorVisualizer" data-params='{"embeddedMode": true, "lang": "python", "jumpToEnd": false}'></div></div>
-<script src="images/sec-section-name-10.js"></script>
+<script src="images/sec-section-name-12.js"></script>
 </div></div>
-<div class="code-box">
-<button class="code-copy" title="Copy code" role="button" aria-label="Copy code"><span class="copyicon material-symbols-outlined">content_copy</span><span class="checkmark material-symbols-outlined">check</span></button><pre class="console"><span class="prompt unselectable">$ </span><b>Console input here
+<div class="para" id="sec-section-name-13">A console:</div>
+<div class="code-box"><pre class="console clipboardable"><span class="prompt unselectable">$ </span><b>Console input here
 </b>And console output here
 <span class="prompt unselectable">$ </span><b>More input
 </b>More output
-</pre>
-</div>
+</pre></div>
+<figure class="listing figure-like" id="sec-section-name-15"><figcaption><span class="type">Listing</span><span class="space"> </span><span class="codenumber">1.1.1<span class="period">.</span></span><span class="space"> </span>A static Java program with highlighted lines</figcaption><div class="listing__contents">
+<details class="source-view"><summary class="source-view__link" data-reveal-label="Open" data-close-label="Close">View Source for program</summary><article class="view-source-view__content"><pre><code class="language-xml">&lt;program language="java" highlight-lines="2,6-8" include-source="yes"&gt;
+    &lt;title&gt;"hi" in Java&lt;/title&gt;
+    &lt;code&gt;
+    import javax.swing.JFrame;  //Importing class JFrame
+    import javax.swing.JLabel;  //Importing class JLabel
+    public class HelloWorld {
+        public static void main(String[] args) {
+            JFrame frame = new JFrame();           //Creating frame
+            frame.setTitle("Hi!");                 //Setting title frame
+            frame.add(new JLabel("Hello, world!"));//Adding text to frame
+            frame.pack();                          //Setting size to smallest
+            frame.setLocationRelativeTo(null);     //Centering frame
+            frame.setVisible(true);                //Showing frame
+        }
+    }
+    &lt;/code&gt;
+&lt;/program&gt;
+</code></pre></article></details><div class="code-box"><pre class="program clipboardable" data-line="2,6-8"><code class="language-java">import javax.swing.JFrame;  //Importing class JFrame
+import javax.swing.JLabel;  //Importing class JLabel
+public class HelloWorld {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame();           //Creating frame
+        frame.setTitle("Hi!");                 //Setting title frame
+        frame.add(new JLabel("Hello, world!"));//Adding text to frame
+        frame.pack();                          //Setting size to smallest
+        frame.setLocationRelativeTo(null);     //Centering frame
+        frame.setVisible(true);                //Showing frame
+    }
+}
+</code></pre></div>
+</div></figure><div class="para" id="sec-section-name-16">side-by-side</div>
 <div class="sbsgroup"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel top" style="width:33.3333333333333%;"><pre class="program"><code class="language-py">def f():
+<div class="sbspanel top" style="width:33.3333333333333%;"><pre class="program clipboardable"><code class="language-py">def f():
   return "side-by-side"
 </code></pre></div>
-<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para" id="sec-section-name-12-1-2">And also ...</div></div>
-<div class="sbspanel top" style="width:33.3333333333333%;"><pre class="program"><code class="language-py">def f():
+<div class="sbspanel top" style="width:33.3333333333333%;"><div class="para" id="sec-section-name-17-1-2">And also ...</div></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><pre class="program clipboardable"><code class="language-py">def f():
   return "side-by-side"
 </code></pre></div>
 </div></div></div></section></div>
