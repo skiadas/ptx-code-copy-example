@@ -1090,13 +1090,14 @@ window.addEventListener("DOMContentLoaded", function(event) {
 
 // START Support for code-copy button functionality
 document.addEventListener("click", (ev) => {
-    const button = ev.target.closest("button");
     const codeBox = ev.target.closest(".clipboardable");
     if (!navigator.clipboard || !codeBox) return;
+    const button = ev.target.closest(".code-copy");
     const buttonContent = button.textContent;
-    const preContent = codeBox.textContent;
-    const index = preContent.lastIndexOf(buttonContent);
-    navigator.clipboard.writeText(preContent.substring(0, index));
+    const preContent = codeBox.querySelector("pre").textContent;
+    // const index = preContent.lastIndexOf(buttonContent);
+    navigator.clipboard.writeText(preContent);
+    // navigator.clipboard.writeText(preContent.substring(0, index));
     button.classList.toggle("copied")
     setTimeout(() => button.classList.toggle("copied"), 1000);
 });
@@ -1104,7 +1105,12 @@ document.addEventListener("click", (ev) => {
 document.addEventListener("DOMContentLoaded", () => {
     const elements = document.querySelectorAll(".clipboardable");
     for (el of elements) {
-        el.insertAdjacentHTML("beforeend", `
+        const div = document.createElement("div");
+        div.classList.add("clipboardable");
+        el.classList.remove("clipboardable");
+        el.replaceWith(div);
+        div.insertAdjacentElement("afterbegin", el);
+        div.insertAdjacentHTML("beforeend", `
     <button class="code-copy" title="Copy code" role="button" aria-label="Copy code" >
         <span class="copyicon material-symbols-outlined">content_copy</span>
         <span class="checkmark material-symbols-outlined">check</span>

@@ -9,7 +9,7 @@
 <!--******************************************-->
 <!--*  Authored with PreTeXt                 *-->
 <!--*  pretextbook.org                       *-->
-<!--*  Theme: default-modern                 *-->
+<!--*  Theme: tacoma                         *-->
 <!--*  Palette:                              *-->
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
@@ -156,7 +156,9 @@ eBookConfig.enable_chatcodes =  false;
     def f(x):
       return x + x
   </pre>
-<div class="para">A cd with clines:</div>
+<div class="para">A one-line cd:</div>
+<pre class="code-display tex2jax_ignore clipboardable">something here</pre>
+<div class="para">A cd with some clines:</div>
 <pre class="code-display tex2jax_ignore clipboardable">a line here
 Another line
 </pre>
@@ -172,11 +174,11 @@ import pandas
 import pandas
 </code></pre></div>
 <div class="para" id="sec-section-name-7">Line numbers makes the button visually disappear (but still interactable via keyboard)</div>
-<div class="code-box"><pre class="program line-numbers clipboardable"><code class="language-py">import httpx
+<div class="code-box"><pre class="program clipboardable line-numbers"><code class="language-py">import httpx
 import pandas
 print("with line numbers")
 </code></pre></div>
-<div class="code-box"><pre class="program line-numbers clipboardable" data-line="2"><code class="language-py">import httpx
+<div class="code-box"><pre class="program clipboardable line-numbers" data-line="2"><code class="language-py">import httpx
 import pandas
 </code></pre></div>
 <div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id=""><textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="_editor" data-question_label="" data-codelens="true" data-timelimit="25000">def f():
@@ -233,7 +235,46 @@ public class HelloWorld {
 <div class="sbspanel top" style="width:33.3333333333333%;"><pre class="program clipboardable"><code class="language-py">def f():
   return "side-by-side"
 </code></pre></div>
-</div></div></div></section></div>
+</div></div></div>
+<figure class="figure figure-like" id="sec-section-name-18"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel top" style="width:44.4444444444444%;"><pre class="program clipboardable"><code class="language-r">n_loops &lt;- 10
+x.means &lt;- numeric(n_loops)
+for (i in 1:n_loops){
+    x &lt;- as.integer(runif(100, 1, 7))
+    x.means[i] &lt;- mean(x)
+}
+x.means
+</code></pre></div>
+<div class="sbspanel top" style="width:50%;"><pre class="console clipboardable"><span class="prompt unselectable">pi@rpi ~$ </span><b>gcc -o intAndFloat intAndFloat.c
+</b><span class="prompt unselectable">pi@rpi ~$ </span><b>./intAndFloat
+</b>19088743 (integer) and 19088.742188 (float)
+<span class="prompt unselectable">pi@rpi ~$ </span><b>
+</b></pre></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.2<span class="period">.</span></span><span class="space"> </span>A <code class="code-inline tex2jax_ignore">&lt;program&gt;</code> and a <code class="code-inline tex2jax_ignore">&lt;console&gt;</code></figcaption></figure><figure class="figure figure-like" id="sec-section-name-19"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel top" style="width:44.4444444444444%;"><pre class="program clipboardable"><code class="language-r">n_loops &lt;- 10
+x.means &lt;- numeric(n_loops)
+for (i in 1:n_loops){
+    x &lt;- as.integer(runif(100, 1, 7))
+    x.means[i] &lt;- mean(x)
+}
+x.means
+</code></pre></div>
+<div class="sbspanel top" style="width:50%;"><div class="para logical" id="sec-section-name-19-2-2"><pre class="code-display tex2jax_ignore clipboardable"> n_loops &lt;- 10 x.means &lt;- numeric(n_loops) for (i in 1:n_loops){ x &lt;-
+          as.integer(runif(100, 1, 7)) x.means[i] &lt;- mean(x) } x.means </pre></div></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.3<span class="period">.</span></span><span class="space"> </span>A <code class="code-inline tex2jax_ignore">&lt;program&gt;</code> and a <code class="code-inline tex2jax_ignore">&lt;cd&gt;</code></figcaption></figure><div class="code-box"><pre class="program clipboardable"><code class="language-none">Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</code></pre></div>
+<div class="code-box"><pre class="console clipboardable"><span class="prompt unselectable">$ </span><b>Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</b></pre></div>
+<div class="para logical" id="sec-section-name-22"><pre class="code-display tex2jax_ignore clipboardable"> Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur. </pre></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-chapter-title.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
